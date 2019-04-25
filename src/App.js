@@ -31,7 +31,8 @@ class App extends Component {
     this.state={
       input:'',
       imageURL:'',
-      box:{}
+      box:{},
+      route: 'SignIn'
     }
   }
 
@@ -74,8 +75,6 @@ displayFaceBox = (box) => {
         <Rank />
         <ImageLinkForm onInputChange = {this.onInputChange} onButtonSubmit={this.onButtonSubmit}/> 
         <FaceRecognition box={this.state.box} imageURL={this.state.imageURL} />
-
-
       </div>
     );
   }
