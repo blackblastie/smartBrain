@@ -66,7 +66,6 @@ displayFaceBox = (box) => {
       .catch(err => console.log(err));
       }
 
-
   render() {
     return (
       <div className="App">
@@ -77,6 +76,8 @@ displayFaceBox = (box) => {
         <Rank />
         <ImageLinkForm onInputChange = {this.onInputChange} onButtonSubmit={this.onButtonSubmit}/> 
         <FaceRecognition box={this.state.box} imageURL={this.state.imageURL} />
+
+
       </div>
     );
   }
